@@ -1,28 +1,283 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-GB" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" style="overflow: auto; height: auto;">
   <head>
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<!-- COLOR BAR -->
+  	<meta name="theme-color" content="#FFF"><!-- Chrome, Firefox OS, Opera and Vivaldi -->
+  	<meta name="msapplication-navbutton-color" content="#FFF"><!-- Windows Phone -->
+  	<meta name="apple-mobile-web-app-status-bar-style" content="#FFF"><!-- iOS Safari -->
+  	<!-- END COLOR BAR -->
+  	<title>Jeram.ai</title>
+    <style type="text/css">
+      img.wp-smiley,
+      img.emoji {
+      	display: inline !important;
+      	border: none !important;
+      	box-shadow: none !important;
+      	height: 1em !important;
+      	width: 1em !important;
+      	margin: 0 .07em !important;
+      	vertical-align: -0.1em !important;
+      	background: none !important;
+      	padding: 0 !important;
+      }
+    </style>
+    <link rel="stylesheet" id="style-css" href="css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" id="font-awesome-css" href="css/fontawesome.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+    <link rel="icon" href="img/cropped-LogoJF-32x32.png" sizes="32x32">
+    <link rel="icon" href="img/cropped-LogoJF-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon-precomposed" href="img/cropped-LogoJF-180x180.png">
+    <meta name="msapplication-TileImage" content="img/cropped-LogoJF-270x270.png">
   </head>
-  <body>
-    <div class="container-fluid">
-      <h1>Firebase testing lmao</h1>
+  <body class="home page page-id-6 page-template-default _masterslider _ms_version_2.8.0" style="overflow: auto; height: auto;" cz-shortcut-listen="true">
+	   <!--[if lt IE 8]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+    <div id="page" class="hfeed site">
+    	<header id="masthead" class="site-header" role="banner">
+        <nav class="navbar navbar-light bg-faded navbar-static-top">
+          <a class="navbar-brand" href="#">
+            <img id="mainlogo" src="img/logoJF.png">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="menu-item menu-item-type-custom menu-item-object-custom nav-item">
+                <a href="#about_me" class="nav-link">About me</a>
+              </li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom nav-item">
+                <a href="#skillset" class="nav-link">Skillset</a>
+              </li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom nav-item">
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+              </li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom nav-item">
+                <a href="#contact" class="nav-link">Contact me!</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    	<div class="loader-wrapperr">
+    		<div id="loader-wrapper">
+    			<div class="loader">
+    				<span class="loader-block"></span>
+    				<span class="loader-block"></span>
+    				<span class="loader-block"></span>
+    				<span class="loader-block"></span>
+    				<span class="loader-block"></span>
+    				<span class="loader-block"></span>
+    				<span class="loader-block"></span>
+    				<span class="loader-block"></span>
+    				<span class="loader-block"></span>
+    			</div>
+    			<div class="loader-section section-left"></div>
+    			<div class="loader-section section-right"></div>
+    		</div>
+    	</div>
+    	<div class="logowrapper">
+    		<div class="logowrapperbg">
+    			<h1 class="logo"><span>&lt; </span><span data-hover="Jeram.ai">Jeram.ai</span><span> /&gt;</span></h1>
+    			<h1 class="logo2"><span>&lt; </span><span data-hover="Jeram.ai">Jeram.ai</span><span> /&gt;</span></h1>
+    			<div class="underlinetext"><strong>Only <span>cool</span> coding</strong></div>
+    			<div class="logowrapper2">
+    				<span id="godown">
+    					<span>.</span>
+    					<span>.</span>
+    				</span>
+    			</div>
+    		</div>
+    		<div class="logowrapperimg">
+    			<img src="img/shutterstock_232639537.jpg" alt="home">
+    		</div>
+    	</div>
+      <div id="content" class="site-content container-fluid">
+        <div class="content-area row">
+          <main id="main" class="site-main col-md-12" role="main">
+            <article id="post-6" class="post-6 page type-page status-publish hentry">
+            	<header class="entry-header">
+            	   <div class="post-thumbnail"></div>
+            	</header>
+            	<div class="entry-content">
+              	<p><!-- **  About me **  --></p>
+                <div class="row bg bg1">
+                  <div class="container">
+                    <h2 id="about_me"><span>About me</span></h2>
+                    <div class="row aboutme_text">
+                      <div class="col-md-6">
+                        <div class="foto_me">
+                          <img src="img/test.png" alt="jeramai" class="alignnone size-full wp-image-48">
+                        </div>
+                      </div>
+                      <div class="col-md-6 aboutme_texterino">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="about_me_i">
+                            <p><i class="fa fa-code" aria-hidden="true"></i></p>
+                          </div>
+                          <p class="about_me_p">I am a developer with a passion for good looking stuff. On my last job I got the oppertunity to master the skills of <code>SEO</code> and everything to do with the <code>UX</code> of a website. </p>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="about_me_i">
+                            <p><i class="fa fa-google" aria-hidden="true"></i></p>
+                          </div>
+                          <p class="about_me_p">My dream is to work for the big G. I don’t think I am quite ready for it yet, but I am sure this is not the last time you’ll hear my name.</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="about_me_i">
+                            <p><i class="fa fa-android" aria-hidden="true"></i></p>
+                          </div>
+                          <p class="about_me_p">My biggest accomplishment was writing my first android app, it was a FlappBird clone called BubbleTurtle. <a href="#">Check it out here!</a></p>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="about_me_i">
+                            <p><i class="fa fa-gamepad" aria-hidden="true"></i></p>
+                          </div>
+                          <p class="about_me_p">My passion for coding came when I started playing MineCraft. I always wanted to build my own mods, so that was just what I did.</p>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <p><!-- **  Skillset  **  --></p>
+                <div class="row bg bg2">
+                  <div class="container">
+                    <h2 id="skillset"><span>Skillset</span></h2>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="circlechart">
+                          <div class="circle1">
+                            <span>Clever<br>
+                              <span>Everyone has weaknesses, but I’m not everyone.</span><br>
+                            </span>
+                          </div>
+                          <div class="circle2">
+                            <span>Pizza<br>
+                              <span>I love Pizza more than I love myself.</span><br>
+                            </span>
+                          </div>
+                          <div class="circle3">
+                            <span>Creative<br>
+                              <span>Nothing I make is the same, because everything should be unique.</span><br>
+                            </span>
+                          </div>
+                          <div class="circle4">
+                            <span>Funny<br>
+                              <span>How does a train eat? Chew, Chew…</span><br>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-8">
+                        <ul class="chart_wrapper">
+                          <li>PHP</li>
+                          <li>HTML</li>
+                          <li>jQuery</li>
+                          <li>CSS</li>
+                          <li>Webdesign/UX</li>
+                          <li>C#</li>
+                          <li>ASP.NET</li>
+                          <li>WordPress</li>
+                          <li>SEO</li>
+                          <li>Python</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p><!-- **  Portfolio **  --></p>
+              <div class="row bg bg3">
+                <div class="container">
+                <h2 id="portfolio"><span>Portfolio</span></h2>
+                </div>
+                <div class="container-fluid portfolio2_wrapper">
+                  <div class="row">
+                    <div class="col-md-4 ">
+                      <figure class="portfolio2_block">
+                      <img src="" alt=""><p></p>
+                        <figcaption>
+                          <h3>Wurkie!</h3>
+                          <p>A “Wurkie” is a short video where you present yourself to your future employer. Make your own Wurkie now and get in contact with big buisnisses!</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                    <div class="col-md-4 ">
+                      <figure class="portfolio2_block">
+                        <img src="" alt=""><p></p>
+                        <figcaption>
+                          <h3>Train2Gether!</h3>
+                          <p>Train2Gether is the website you need when you want to accomplish your fitness goals. Here you will find fun and fresh ways to do sports.</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                    <div class="col-md-4 ">
+                      <figure class="portfolio2_block">
+                        <img src="" alt=""><p></p>
+                        <figcaption>
+                        <h3>TuinKeur!</h3>
+                        <p>TuinKeur is the quality mark in the green sector of the Netherlands. They want every Gardening buisniss to be the best, and they do a pretty good job in accomplishing it!</p>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p><!-- **  Contact**  --></p>
+              <div class="row bg bg1">
+                <div class="container">
+                  <h2 id="contact"><span>Contact</span></h2>
+                  <div class="row sm_icons_row">
+                    <div class="sm_icons"><a href="https://www.facebook.com/profile.php?id=100009509300870" target="_blank" class="radial_in"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+                    <div class="sm_icons"><a href="#" target="_blank" class="radial_in"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+                    <div class="sm_icons"><a href="https://www.linkedin.com/in/jeramai-faber-19a85410b" target="_blank" class="radial_in"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>
+                    <div class="sm_icons"><a href="https://www.youtube.com/user/jeramai7777" target="_blank" class="radial_in"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></div>
+                    <div class="sm_icons"><a href="https://www.instagram.com/jeramai7/" target="_blank" class="radial_in"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+                    <div class="sm_icons"><a href="https://plus.google.com/117349274566519236043" target="_blank" class="radial_in"><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </main>
+        </div>
+      </div>
     </div>
-    <footer>
-      <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
-      <script>
-        // Initialize Firebase
-        var config = {
-          apiKey: "AIzaSyD1O-HsMxa6fcW01yAMsPZ_StVAO15Q_bo",
-          authDomain: "jeramai-e430c.firebaseapp.com",
-          databaseURL: "https://jeramai-e430c.firebaseio.com",
-          projectId: "jeramai-e430c",
-          storageBucket: "jeramai-e430c.appspot.com",
-          messagingSenderId: "405994543475"
-        };
-        firebase.initializeApp(config);
-      </script>
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-      <script src="jquery.js"></script>
+    <footer id="colophon" class="site-footer" role="contentinfo">
+      <div class="site-info container">
+        <div class="row">
+          <div class="footer-copyright col-md-12">© Copyright 2018 <a href="#" target="_blank">Jeram.ai</a></div>
+        </div>
+      </div>
     </footer>
+    <div class="scroll-top ufo-wrapper">
+    	<div class="ufo">
+    		<div class="body"></div>
+    		<div class="bulb"></div>
+    		<div class="lamp"></div>
+    		<div class="lamp lamp2"></div>
+    		<div class="lamp lamp3"></div>
+    		<div class="lamp lamp4"></div>
+    		<div class="light"></div>
+    	</div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
   </body>
 </html>
