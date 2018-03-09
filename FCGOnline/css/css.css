@@ -1,0 +1,206 @@
+::-webkit-input-placeholder { /* WebKit browsers */
+color:    #000 !important;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+color:    #000 !important;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+color:    #000 !important;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+color:    #000 !important;
+}
+
+.stand {
+text-align: center;
+margin: 0 auto;
+}
+
+iframe, object, embed {
+        max-width: 100%;
+}
+
+.galerij {
+margin: 0 auto;
+text-align: center;
+width: 90%;
+border: 1px solid grey;
+}
+
+.galerijfotos{
+margin-top: 10px;
+margin-bottom: 10px;
+display: inline-block;
+    max-width: 100%;
+    padding: 15px;
+    line-height: 1.42857143;
+    background-color: #E6E2E2;
+    border: 3px solid #C57878;
+    border-radius: 4px;
+    margin-bottom: 2%;
+}
+
+.top-nav ul li a.current {
+  color:white;
+}
+
+.verslagTitel h1{
+	width: 98%;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+    padding: 1.5% 1.5%;
+    background-color: #009959;
+    color: #fff;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    line-height: 1.3em;
+}
+.galerij p{
+text-align: left;
+font-size: 14px;
+line-height: 15.808px;
+margin-left: 5%;
+margin-right: 15%;
+line-height: 1.6em;
+}
+
+@media only screen and (min-width: 1px) and (max-width: 900px) {
+.galerij p{
+margin-right: 5%;
+}
+.slider_img {
+height: 100px;
+}
+}
+
+a .geenmuis {
+cursor: default;
+}
+
+.laatsteNieuws {
+width: 65%;
+}
+
+.fcglogo {
+float: left;
+    display: inline;
+    width: 11%; 
+	height: 150px;
+	position: absolute
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1350px) {
+.fcglogo {
+    width: 11%;
+	height: 122px;
+}
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1099px) {
+.fcglogo {
+    width: 11%;
+	height: 98px;
+}
+}
+
+@media only screen and (min-width: 700px) and (max-width: 899px) {
+.fcglogo {
+    width: 12%;
+	height: 98px;
+}
+}
+
+@media only screen and (min-width: 500px) and (max-width: 699px) {
+.fcglogo {
+    width: 14%;
+	height: 98px;
+}
+}
+
+@media only screen and (min-width: 400px) and (max-width: 499px) {
+.fcglogo {
+    width: 19%;
+	height: 92px;
+}
+}
+
+@media only screen and (min-width: 300px) and (max-width: 399px) {
+.fcglogo {
+    width: 23%;
+	height: 80px;
+}
+}
+
+@media(max-width:299px){
+.fcglogo {
+    width: 23%;
+	height: 70px;
+}
+}
+
+@media(min-width:2000px){
+.fcglogo {
+    width: 8%;
+	height: 210px;
+}
+}
+
+.slidefotos {
+float: right !important;
+width: 55% !important;
+position: absolute !important;
+height: 100% !important;
+    border: 3px solid #ccc !important;
+	
+}
+
+.slidetekst {
+float: left !important;
+width: 45%;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 520px) {
+.slidefotos {
+width: 35% !important;
+height: 60% !important;
+}
+}
+
+@media(min-width:1500px){
+.slidefotos {
+width: 35% !important;
+height: 100% !important;
+margin-left: 20%;
+}
+
+.bnr-botom-left p {
+    font-size: 1.3em;
+    width: 66%;
+}
+}
+@media only screen and (min-width: 1125px) and (max-width: 1500px) {
+.bnr-botom-left p {
+    font-size: 18px;
+}
+}
+
+@media only screen and (min-width: 1501px) and (max-width: 2000px) {
+.bnr-botom-left p {
+    font-size: 20px;
+}
+}
+
+@media(max-width:320px){
+.slidefotos {
+display: none;
+}
+}
+@media (max-width: 363px){
+.bnr-botom-left p {
+	width: 86%;
+    font-size: 0.78em;
+}
+}
+

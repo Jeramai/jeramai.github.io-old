@@ -1,0 +1,754 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Carrois+Gothic);
+*{
+font-family: 'Roboto', sans-serif !important;
+margin:0;
+}
+
+body { 
+	
+}
+body, html {
+    cursor: url(../pics/cursor.png), pointer;
+}
+.left {
+text-align:left;
+}
+.right {
+text-align:right;
+}
+.fl-left {
+float:left;
+}
+.fl-right {
+float:right;
+}
+
+.wrapper{
+	background-color: rgba(0, 0, 0, 0.5);
+	padding-top:7px;
+}
+.balk1{
+	background-color: #1E1E1E;
+	height:40px;
+}
+.balk1left{
+	margin-left:5%;
+	display:inline-block;
+}
+.balk1right{
+	margin-right:5%;
+	display:inline-block;
+	position:absolute;
+	right:0px;
+}
+.balk1left img{
+	margin-top:-2px;
+}
+.header-riotgames{
+	display: inline-block;
+    position: relative;
+    left: 2px;
+    font-size: 25px;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+.header-riotgames:hover{
+	color:#EB7260;
+}
+
+.summonerinfo{
+	background-color:#324053;
+	margin-top:5px;
+	height:200px;
+}
+.summoner-icon, .summoner-icon1{
+	padding-top:6px;
+	margin:15px;
+	display:inline-block;
+}
+.summoner-icon1{
+	height:40px;
+}
+.suminfoname-lvl{
+	display:inline-block;
+}
+.suminfoname{
+	margin-top:-20px;
+	float:left;
+	font-weight: 900;
+    font-size: 30px;
+	color: #ecf0f1;
+}
+.suminfolvl{
+	float:left;
+	font-weight: 300;
+    font-size: 15px;
+	color: #9b9122;
+}
+.sumsoloQinfo1{
+	float:left;
+	
+}
+.sumsoloQinfo2{
+	color:white;
+	float:left;
+	margin-top:30px;
+}
+.green{
+	color:#16A085;
+}
+.red{
+	color:#C0392B;
+}
+.center{
+	text-align:center;
+}
+.left{
+	text-align:left;
+}
+.summonerinfo2{
+	margin-top:5px;
+	padding:7px;
+	width:100%;
+}
+.summonerinfo2 table{
+	color:white;
+}
+.champion_grid_img{
+	height:50px;
+}
+.sumtable td{
+	padding:5px;
+	padding-left:10px;
+	padding-right:10px;
+	font-weight:500;
+	font-size:18px;
+}
+.sumtable2 td{
+	padding-right:0px;
+	border-top:1px solid white;
+}
+.suminfotitle{
+	font-weight:800;
+	color:white;
+}
+
+.summonerinfo3, .summonerinfo2_2{
+	border:1px solid white;
+	padding:7px;
+	margin-top:10px;
+	color:white;
+	margin-bottom:20px;
+	border-radius:3px;
+	text-align:left;
+	background:rgba(50,64,83,0.3);
+}
+.ingameinfo{
+	margin-top:20px;
+}
+.ingameinfoplayerimg, .ingameinfoplayerspells, .ingameinfoplayername {
+	display:inline-block;
+}
+.ingameinfoplayername{
+	margin-left:35px;
+}
+.ingameinfoplayerimg .champion_grid_img_name{
+	display:none;
+}
+.ingameinfoplayerspells{
+	position:absolute;
+	margin-left:2px;
+}
+.ingameinfoplayer{
+}
+.blueside{
+	border:1px solid #2980B9;
+	background:rgba(41,128,185,0.3);
+}
+.redside{
+	border:1px solid #8E44AD;
+	background:rgba(142,68,173,0.3);
+}
+.ingameinfobanned{
+	border:1px solid #444444;
+	background:rgba(68,68,68,0.5);	
+	margin-top:10px;
+	height:47px;
+}
+.ingameinfobanned .champion_grid_img_name{
+	display:none;
+}
+.ingameinfobanned .champion_grid_img{
+	height:45px !important;
+	margin-right:2px;
+}
+.ingameinfobanned .fl-left .champion_grid_img{
+	border:1px solid #2980B9;
+	background:rgba(41,128,185,0.3);
+}
+.ingameinfobanned .fl-right .champion_grid_img{
+	border:1px solid #8E44AD;
+	background:rgba(142,68,173,0.3);
+}
+.ingameinfoplayerrunes{
+	display: inline-block;
+	position:absolute;
+	left:30%;
+	margin-top:17px;
+}
+.titlerunes{
+	position:relative;
+}
+.detailsrunes{
+	display:none;
+	border:1px solid black;
+	background-color:rgba(0,0,0,0.9);
+	padding:7px;
+	z-index:5;
+	border-radius:3px;
+	position:absolute;
+	width:200px;
+}
+.ingameinfoplayermasteries{
+	display: inline-block;
+	position:absolute;
+	left:40%;
+	margin-top:17px;
+}
+.detailsmasteries{
+	display:none;
+	border:1px solid black;
+	background-color:rgba(0,0,0,0.9);
+	padding:2px;
+	z-index:5;
+	border-radius:3px;
+	position:absolute;
+	left:20px;
+	width:640px;
+	height:270px;
+	margin-top:-5px;
+	background-image: url("../pics/masteries/masterybackground.png");
+    background-repeat: no-repeat;
+}
+.detailsmasteries div{
+	max-height:32px;
+	max-width:32px;
+}
+.masteryrank{
+	position:absolute;
+	margin-top:15px;
+	margin-left:20px;
+	background-color:rgba(0,0,0,0.5);
+	padding:0px 5px;
+}
+
+
+.summonerinfo4{
+	border:1px solid white;
+	padding:7px;
+	margin-top:10px;
+	color:white;
+	margin-bottom:20px;
+	border-radius:3px;
+	background:rgba(50,64,83,0.3);
+}
+.sum4button{
+	color:black;
+	margin:20px 0;
+}
+
+
+
+/* Effect3 */
+.effect3{
+	position: relative;
+	transition:600ms;
+}
+.effect3:after{
+	content: attr(data-hover);
+	position: absolute;
+	right: -100%;
+	top: 0;
+	transform:skewX(-45deg);
+	-webkit-transform:skewX(-45deg);
+	-moz-transform:skewX(-45deg);
+	-o-transform:skewX(-45deg);
+	-ms-transform:skewX(-45deg);
+	transition:300ms;
+	opacity: 0;
+	color: #E74C3C;
+}
+.effect3:hover:after{
+	transform:skewX(0deg);
+	-webkit-transform:skewX(0deg);
+	-moz-transform:skewX(0deg);
+	-o-transform:skewX(0deg);
+	-ms-transform:skewX(0deg);
+	opacity: 1;
+	right: 0;
+}
+.effect3:hover{
+	color: transparent !important;
+}
+
+.summonerinfo5{
+	min-height:calc(100vh - 67px);
+	color:white;
+}
+.red{
+	color:#e74c3c;
+}
+.footer{
+	padding-top:7px;
+	padding-bottom:7px;
+	font-size:11px;
+	background-color:rgba(17,26,36,0.7);
+	color:white;
+}
+.intropage{
+	margin-top:20%;
+	margin-bottom:20%;
+}
+/* INTROPAGE */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: url('../pics/srbg2.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#header_intropage {
+  position: fixed;
+  width: 100%;
+  height: 35px;
+  top: 0;
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(39,39,43,1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(100%,rgba(39,39,43,1)));
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(39,39,43,1) 100%);
+  background: -o-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(39,39,43,1) 100%);
+  background: -ms-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(39,39,43,1) 100%);
+  background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(39,39,43,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#27272b',GradientType=0 );
+}
+
+#header_intropage ul {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+.right_intropage {
+  float: right;
+}
+
+.clear_intropage {
+  clear: both;
+}
+
+#header_intropage ul li {
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+}
+
+#logo_intropage {
+  width: 128px;
+  margin: 10% auto 10% auto;
+}
+
+#search_intropage {
+  width: 70%;
+  margin: 5% auto 0 auto;
+  text-align: center;
+  color:white;
+}
+
+#search_intropage input {
+  background: transparent;
+  width: 1px;
+  font-size: 30pt;
+  padding: 10px;
+  border: 0;
+  border-bottom: 4px solid #3399FF;
+  outline: none;
+  -webkit-transition: border-color 300ms ease-in, width 800ms linear;
+  -moz-transition: border-color 300ms ease-in, width 800ms linear;
+  -o-transition: border-color 300ms ease-in, width 800ms linear;
+  transition: border-color 300ms ease-in, width 800ms linear;
+}
+
+#search_intropage #tfnewsearch ::-webkit-input-placeholder {
+  color: #fff;
+}
+
+#search_intropage #tfnewsearch :-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+#search_intropage #tfnewsearch ::-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+#search_intropage #tfnewsearch :-ms-input-placeholder {
+  color: #fff;
+}
+
+#search_intropage input:focus {
+  border-bottom: 4px solid #0081B1;
+  -webkit-transition: border-color 300ms ease-in;
+  -moz-transition: border-color 300ms ease-in;
+  -o-transition: border-color 300ms ease-in;
+  transition: border-color 300ms ease-in;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-- spectate --*/
+.answer {
+  display: none;
+  margin-bottom: 20px;
+	border:1px solid #910f16;
+	background:rgba(145,15,23,0.3);
+	border-radius:3px;
+	padding:7px;
+}
+.question.active {
+  color: red;
+}
+.question{
+  text-decoration:none;
+ }
+
+/* == Zoekbalk == */
+	
+#tfnewsearch{
+	font-size:10px;
+	padding:0px;
+	margin-top:5px;
+	}
+	.tftextinput{
+		margin: 0;
+		padding: 2px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		border:1px solid #0076a3; border-right:0px;
+		text-align: left;
+		height:30px;
+		width:225px;
+	}
+	.tfbutton {
+		margin-left:-3px;
+		height:30px;
+		width:75px;
+		padding: 2px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3; border-left:0px;
+		background: #0095cd;
+		background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+	}
+	.tfbutton:hover {
+		text-decoration: none;
+		background: #007ead;
+		background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+		background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	}
+	/* Fixes submit button height problem in Firefox */
+	.tfbutton::-moz-focus-inner {
+	  border: 0;
+	}
+
+/* == BOOTSTRAP STUFF == */
+
+@media (max-width: 768px) { /* xs */
+	.balk1left{
+		margin-left:10px;
+	}
+	.balk1right{
+		margin-right:10px;
+	}
+	.summonerinfo2{
+		margin-top:5px;
+		padding:7px;
+		width:100%;	
+		font-size:11px;	
+	}
+	.summonerinfo2 table{
+		margin-top:5px;
+		width:100%;	
+		font-size:11px;	
+	}
+	.sumtable td{
+		-ms-transform: rotate(-15deg); /* IE 9 */
+		-webkit-transform: rotate(-15deg); /* Chrome, Safari, Opera */
+		transform: rotate(-15deg);
+	}
+	.sumtable2 .left{
+		text-align:center;
+	}
+	.daspechkleinerweg{
+		display:none;
+	}
+	.sumtable td {
+		padding: 5px;
+		padding-left: 5px;
+		padding-right: 5px;
+		font-weight: 500;
+		font-size: 13px;
+	}
+	.champion_grid_img{
+		height:50px;
+	}
+	.spell_grid_img{
+		height:25px;
+		width:25px;
+	}
+	.summonerinfo{
+		text-align:center;
+		height:auto;
+		padding-bottom: 20px;
+	}	
+	.ingameinfoplayerrunes, .ingameinfoplayermasteries{
+		display:none;
+	}
+	.footer{
+		font-size:11px;
+	}
+	.hamburger{
+		display:none;
+	}
+}
+@media (min-width: 769px) and (max-width:  992px) { /* sm */
+	.balk1left{
+		margin-left:10px;
+	}
+	.balk1right{
+		margin-right:10px;
+	}
+	.sumtable td{
+		padding:5px;
+		padding-left:0px;
+		padding-right:0px;
+		font-weight:500;
+		font-size:18px;
+	}
+	.ingameinfoplayermasteries{
+		left:60%;
+	}
+	.footer{
+		font-size:11px;
+	}
+	.hamburger{
+		display:none;
+	}
+}
+@media (min-width: 993px) and (max-width: 1200px) { /* md */
+}
+@media (min-width: 1201px) { /* lg */
+}
+
+
+
+/*-- MEER CSS MEDIA QUERIES --*/
+
+
+@media (max-width:  666px) {
+	.header-riotgames{
+		display:none;
+	}
+}
+@media (max-width:  744px) {
+	.summonerinfo2{	
+		margin-left:-5px;
+	}
+}
+@media (max-width:  580px) {
+	.summonerinfo2{	
+		margin-left:-15px;
+	}
+	.ingameinfoplayerrunes{
+		left:75%;
+		margin-top:5px;
+	}
+}
+
+/*-- CSS SIDEBARRRRR --*/
+
+#paper-back {
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 33px;
+}
+#paper-back nav {
+  padding: 120px 34px ;
+}
+#paper-back nav a {
+  display: block;
+  margin-bottom: 25px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+#paper-back nav div {
+	padding-top:50px;
+}
+
+#paper-window {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 2;
+}
+#paper-window.tilt {
+  overflow: hidden;
+  pointer-events: none;
+}
+#paper-window.tilt #paper-front {
+  -webkit-transform: rotate(10deg) translateZ(0);
+          transform: rotate(10deg) translateZ(0);
+}
+
+#paper-front {
+  pointer-events: auto;
+  position: relative;
+  z-index: 3;
+  min-height:100vh;
+  
+  -webkit-transform-origin: center 70%;
+      -ms-transform-origin: center 70%;
+          transform-origin: center 70%;
+  -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+
+#container section {
+  text-align: center;
+  background: url(../pics/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#container section:first-of-type {
+}
+#container section:first-of-type h1 {
+  font-size: 45px;
+}
+#container section:first-of-type p {
+  font-size: 25px;
+}
+@media (max-width: 600px) {
+  #container section:first-of-type {
+  }
+  #container section:first-of-type h1 {
+    font-size: 30px;
+  }
+  #container section:first-of-type p {
+    font-size: 18px;
+  }
+}
+
+.hamburger {
+  position: fixed;
+  z-index: 4;
+  top: 60px;
+  left: 30px;
+  width: 45px;
+  height: 34px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.hamburger span {
+  position: relative;
+}
+.hamburger span, .hamburger span:before, .hamburger span:after {
+  display: block;
+  width: 45px;
+  height: 6px;
+  background-color: #243040;
+  border-radius: 2px;
+  border:1px solid white;
+}
+.hamburger span:before, .hamburger span:after {
+  content: '';
+  position: absolute;
+}
+.hamburger span:before {
+  bottom: -14px;
+}
+.hamburger span:after {
+  bottom: -28px;
+}
+
+.close {
+  position: fixed;
+  top: 60px;
+  left: 30px;
+  width: 45px;
+  height: 34px;
+  cursor: pointer;
+}
+.close:before, .close:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 45px;
+  height: 6px;
+  top: 50%;
+  background-color: white;
+  border-radius: 2px;
+}
+.close:before {
+  -webkit-transform: translateY(-50%) rotate(45deg);
+      -ms-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+}
+.close:after {
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+      -ms-transform: translateY(-50%) rotate(-45deg);
+          transform: translateY(-50%) rotate(-45deg);
+}
+
+

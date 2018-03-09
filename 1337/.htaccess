@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+	Options +FollowSymLinks
+	RewriteEngine On
+	
+	ErrorDocument 404 http://dc-ictwebs.nl/103706/1337/404
+	
+	RewriteRule ^([^\.]+)$ $1.php	
+</IfModule>
