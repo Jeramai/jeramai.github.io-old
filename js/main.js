@@ -66,20 +66,23 @@ jQuery(document).ready(function($) {
 
 });
 
-//Make the loader disapear after 3 sec.
+//Make the loader disapear when the page is loaded
 $(document).ready(function() {
 	$(this).scrollTop(0);
 	$('html, body').css({
 		'overflow': 'hidden',
 		'height': '100vh'
 	});
+});
+
+jQuery(window).load(function () {
 	setTimeout(function() {
 		$('html, body').css({
 			'overflow': 'auto',
 			'height': 'auto'
 		});
 		$('.loader-wrapperr').addClass('loaded');
-	}, 3000);
+	}, 500);
 });
 
 //When clicked on a #-link, scroll to there
