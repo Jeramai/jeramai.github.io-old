@@ -82,7 +82,11 @@ jQuery(window).load(function () {
 			'height': 'auto'
 		});
 		$('.loader-wrapperr').addClass('loaded');
-	}, 500);
+
+	  $('.logowrapper h1.logo span:nth-child(1)').addClass('logo1animation');
+	  $('.logowrapper h1.logo span:nth-child(3)').addClass('logo1animation');
+		$('.logowrapper h1.logo span:nth-child(2)').addClass('logo2animation');
+	}, 200);
 });
 
 //When clicked on a #-link, scroll to there
