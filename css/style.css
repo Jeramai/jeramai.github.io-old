@@ -19,15 +19,22 @@ a:hover, a:active, a:focus{ color:#bd126e; }
 /* Nav */
 #masthead{ position:fixed;right:0;left:0;z-index:1030; }
 .bg-faded{ background-color: rgba(0,0,0,.6) ; }
-.navbar-light .navbar-nav .nav-link{ color:#b9c7cc; }
+nav.navbar-light .navbar-nav .nav-link{ color:#b9c7cc; }
 .navbar-nav{ margin-right: 100px; text-transform:uppercase; }
 .nav-item { margin-left: 1rem; margin-right: 1rem; }
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{ color:deeppink; }
+nav.navbar-light .navbar-nav .nav-link:focus, nav.navbar-light .navbar-nav .nav-link:hover{ color:deeppink; }
 .navbar-brand{ padding:0; margin:0; }
 #mainlogo{ padding:0; margin:0; height:60px; }
 @keyframes rotateY{ 0% { transform: rotateY(0deg); } 100%{ transform: rotateY(360deg); } }
 #mainlogo:hover{ -webkit-animation:rotateY 3s linear infinite; }
 article>p{ display:none; }
+button.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(185,199,204, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+button.custom-toggler.navbar-toggler {
+  border-color: #b9c7cc;
+}
 
 
 /* loader */
@@ -72,14 +79,13 @@ article>p{ display:none; }
 @media screen and (min-width: 767px) { .logowrapper h1.logo span{ font-size:150px; } }
 
 @keyframes logo1 { 0%{ color:#FFF; } 33%{ color:#FFF; } 100%{ color:firebrick; } }
-.logowrapper h1.logo span:nth-child(1),
-.logowrapper h1.logo span:nth-child(3){ -webkit-animation: logo1 4s normal forwards; -moz-animation: logo1 4s normal forwards; -o-animation: logo1 4s normal forwards; -webkit-animation-delay: 4s; animation-delay: 4s; }
+.logo1animation{ -webkit-animation: logo1 4s normal forwards; -moz-animation: logo1 4s normal forwards; -o-animation: logo1 4s normal forwards; }
 
 @keyframes logo2 { 0%{ max-width:0px; } 85%{ max-width:80%; } 100%{ max-width:100%; } }
 .logowrapper h1.logo span:nth-child(2){ color:transparent; font-size:60px; position:relative; }
 @media screen and (min-width: 767px) { .logowrapper h1.logo span:nth-child(2){ font-size:130px; } }
 .logowrapper h1.logo span:nth-child(2):before { position: absolute; top: 0; left: 0; overflow: hidden; border-bottom: 2px solid #fff; color: #fff; content: attr(data-hover); max-width: 0;
--webkit-animation: logo2 3s normal forwards; -moz-animation: logo2 3s normal forwards; -o-animation: logo2 3s normal forwards; -webkit-animation-delay: 4s; animation-delay: 4s; }
+  -webkit-animation: logo2 3s normal forwards; -moz-animation: logo2 3s normal forwards; -o-animation: logo2 3s normal forwards; -webkit-animation-delay: 3s; animation-delay: 3s; }
 
 @keyframes underlineglitch { 0%{ font-style: normal; } 20%{ font-style: italic; font-weight:800; } 30%{ font-style: normal; } 40%{ font-style: italic; font-weight:400; } 62%{ font-style: normal; } 87%{ font-style: italic; } 100%{ font-style: normal;  } }
 .logowrapperbg>.underlinetext{ display:none; }
@@ -126,18 +132,18 @@ article>p{ display:none; }
 .aboutme_text .foto_me{ text-align:right; z-index:3; position:relative; margin-bottom:15px; max-width:100%; padding-bottom:35px; border-radius:20px; }
 .aboutme_text .foto_me>img{  -webkit-transition:.3s; border-radius:15px; max-width:100%; }
 @-webkit-keyframes changebgimg{
-	  0% { background:#FFF url("../img/bgimg/0.jpg ") no-repeat center center; background-size: auto 100%; }
-	 10% { background:#FFF url("../img/bgimg/1.jpg ") no-repeat center center; background-size: auto 100%; }
-	 20% { background:#FFF url("../img/bgimg/2.jpg ") no-repeat center center; background-size: auto 100%; }
-	 30% { background:#FFF url("../img/bgimg/3.jpg ") no-repeat center center; background-size: auto 100%; }
-	 40% { background:#FFF url("../img/bgimg/4.jpg ") no-repeat center center; background-size: auto 100%; }
-	 50% { background:#FFF url("../img/bgimg/5.jpg ") no-repeat center center; background-size: auto 100%; }
-	 60% { background:#FFF url("../img/bgimg/6.jpg ") no-repeat center center; background-size: auto 100%; }
-	 70% { background:#FFF url("../img/bgimg/7.jpg ") no-repeat center center; background-size: auto 100%; }
-	 80% { background:#FFF url("../img/bgimg/8.jpg ") no-repeat center center; background-size: auto 100%; }
-	 90% { background:#FFF url("../img/bgimg/9.jpg ") no-repeat center center; background-size: auto 100%; }
-	100% { background:#FFF url("../img/bgimg/10.jpg") no-repeat center center; background-size: auto 100%; }
-	}
+    0% { background:#FFF url("../img/bgimg/0.jpg ") no-repeat center center; background-size: auto 100%; }
+   10% { background:#FFF url("../img/bgimg/1.jpg ") no-repeat center center; background-size: auto 100%; }
+   20% { background:#FFF url("../img/bgimg/2.jpg ") no-repeat center center; background-size: auto 100%; }
+   30% { background:#FFF url("../img/bgimg/3.jpg ") no-repeat center center; background-size: auto 100%; }
+   40% { background:#FFF url("../img/bgimg/4.jpg ") no-repeat center center; background-size: auto 100%; }
+   50% { background:#FFF url("../img/bgimg/5.jpg ") no-repeat center center; background-size: auto 100%; }
+   60% { background:#FFF url("../img/bgimg/6.jpg ") no-repeat center center; background-size: auto 100%; }
+   70% { background:#FFF url("../img/bgimg/7.jpg ") no-repeat center center; background-size: auto 100%; }
+   80% { background:#FFF url("../img/bgimg/8.jpg ") no-repeat center center; background-size: auto 100%; }
+   90% { background:#FFF url("../img/bgimg/9.jpg ") no-repeat center center; background-size: auto 100%; }
+  100% { background:#FFF url("../img/bgimg/10.jpg") no-repeat center center; background-size: auto 100%; }
+  }
 .aboutme_text .foto_me>img:hover{ -webkit-animation: changebgimg 2s normal infinite; }
 .aboutme_texterino .about_me_i:hover{ -webkit-animation:rotateY 3s linear infinite; }
 .aboutme_texterino .about_me_i>p{ text-align:center; height:70px; width:70px; border:2px solid firebrick; border-radius:50%; line-height:53px; margin:0 auto; color:#FFF; background-color:firebrick; font-size:45px; position:relative; }
@@ -293,6 +299,8 @@ figure.portfolio2_block:hover figcaption, figure.portfolio2_block.hover figcapti
 /* Footer */
 .site-footer{ background-color:#FFF; }
 .footer-copyright{ text-align:center; }
+footer.site-footer{ border-top:1px dashed deeppink; }
+footer .love{ padding:10px; margin-bottom:0; }
 
 
 /* Scroll-top */
