@@ -189,24 +189,32 @@ button.custom-toggler.navbar-toggler {
 .chart_wrapper li:nth-child(1){  background-color:#6082BB; 	-webkit-transition-delay: 0.2s;  }
 .chart_wrapper li:nth-child(2){  background-color:#E44D26; 	-webkit-transition-delay: 0.7s;  }
 .chart_wrapper li:nth-child(3){  background-color:#0868AB; 	-webkit-transition-delay: 0.2s;  }
-.chart_wrapper li:nth-child(4){  background-color:#0171BB; 	-webkit-transition-delay: 0s;  }
-.chart_wrapper li:nth-child(5){  background-color:firebrick; -webkit-transition-delay: 0.5s; }
-.chart_wrapper li:nth-child(6){  background-color:#690081; 	-webkit-transition-delay: 0.9s; }
-.chart_wrapper li:nth-child(7){  background-color:#1A76B9; 	-webkit-transition-delay: 0.7s; }
-.chart_wrapper li:nth-child(8){  background-color:#00749A; 	-webkit-transition-delay: 0.3s; }
-.chart_wrapper li:nth-child(9){  background-color:#6CF6FE;  -webkit-transition-delay: 0.4s; }
-.chart_wrapper li:nth-child(10){ background-color:#FCD435;  -webkit-transition-delay: 1s; }
+.chart_wrapper li:nth-child(4){  background-color:#F0DB4F; 	-webkit-transition-delay: 0.2s;  }
+.chart_wrapper li:nth-child(5){  background-color:#0171BB; 	-webkit-transition-delay: 0s;  }
+.chart_wrapper li:nth-child(6){  background-color:firebrick; -webkit-transition-delay: 0.5s; }
+.chart_wrapper li:nth-child(7){  background-color:#CB2533; 	-webkit-transition-delay: 0.9s; }
+.chart_wrapper li:nth-child(8){  background-color:#690081; 	-webkit-transition-delay: 0.9s; }
+.chart_wrapper li:nth-child(9){  background-color:#1A76B9; 	-webkit-transition-delay: 0.7s; }
+.chart_wrapper li:nth-child(10){  background-color:#00749A; 	-webkit-transition-delay: 0.3s; }
+.chart_wrapper li:nth-child(11){  background-color:#6CF6FE;  -webkit-transition-delay: 0.4s; }
+.chart_wrapper li:nth-child(12){ background-color:#55976B;  -webkit-transition-delay: 1s; }
+.chart_wrapper li:nth-child(13){ background-color:#FCD435;  -webkit-transition-delay: 1s; }
+.chart_wrapper li:nth-child(14){ background-color:#F67800;  -webkit-transition-delay: 1s; }
 
 .chart_wrapper.active li:nth-child(1) { width:90%;  color:#FFF; }
 .chart_wrapper.active li:nth-child(2) { width:100%; color:#FFF; }
 .chart_wrapper.active li:nth-child(3) { width:65%;  color:#FFF; }
-.chart_wrapper.active li:nth-child(4) { width:90%;  color:#FFF; }
-.chart_wrapper.active li:nth-child(5) { width:75%;  color:#FFF; }
-.chart_wrapper.active li:nth-child(6) { width:45%;  color:#FFF; }
-.chart_wrapper.active li:nth-child(7) { width:65%;  color:#FFF; }
-.chart_wrapper.active li:nth-child(8) { width:85%;  color:#FFF; }
-.chart_wrapper.active li:nth-child(9) { width:80%;  color:#555; }
-.chart_wrapper.active li:nth-child(10){ width:15%;  color:#555; }
+.chart_wrapper.active li:nth-child(4) { width:70%;  color:#555; }
+.chart_wrapper.active li:nth-child(5) { width:90%;  color:#FFF; }
+.chart_wrapper.active li:nth-child(6) { width:75%;  color:#FFF; }
+.chart_wrapper.active li:nth-child(7) { width:70%;  color:#FFF; }
+.chart_wrapper.active li:nth-child(8) { width:70%;  color:#FFF; }
+.chart_wrapper.active li:nth-child(9) { width:65%;  color:#FFF; }
+.chart_wrapper.active li:nth-child(10) { width:85%;  color:#FFF; }
+.chart_wrapper.active li:nth-child(11) { width:80%;  color:#555; }
+.chart_wrapper.active li:nth-child(12){ width:65%;  color:#FFF }
+.chart_wrapper.active li:nth-child(13){ width:35%;  color:#555; }
+.chart_wrapper.active li:nth-child(14){ width:45%;  color:#FFF; }
 
 
 /* -- Skillset chart % */
@@ -214,30 +222,34 @@ button.custom-toggler.navbar-toggler {
 .chart_wrapper.active li:nth-child(1):before { content:'90%';  }
 .chart_wrapper.active li:nth-child(2):before { content:'100%'; }
 .chart_wrapper.active li:nth-child(3):before { content:'65%';  }
-.chart_wrapper.active li:nth-child(4):before { content:'90%';  }
-.chart_wrapper.active li:nth-child(5):before { content:'75%';  }
-.chart_wrapper.active li:nth-child(6):before { content:'45%';  }
-.chart_wrapper.active li:nth-child(7):before { content:'65%';  }
-.chart_wrapper.active li:nth-child(8):before { content:'85%';  }
-.chart_wrapper.active li:nth-child(9):before { content:'80%';  }
-
-/* Everything under 30% in here V */
-@media screen and (min-width: 2067px) {
-  .chart_wrapper.active li:nth-child(10):before{ content:'15%';  }
-}
+.chart_wrapper.active li:nth-child(4):before { content:'70%';  }
+.chart_wrapper.active li:nth-child(5):before { content:'90%';  }
+.chart_wrapper.active li:nth-child(6):before { content:'75%';  }
+.chart_wrapper.active li:nth-child(7):before { content:'70%';  }
+.chart_wrapper.active li:nth-child(8):before { content:'70%';  }
+.chart_wrapper.active li:nth-child(9):before { content:'65%';  }
+.chart_wrapper.active li:nth-child(10):before { content:'85%';  }
+.chart_wrapper.active li:nth-child(11):before { content:'80%';  }
+.chart_wrapper.active li:nth-child(12):before { content:'65%';  }
+.chart_wrapper.active li:nth-child(13):before { content:'35%';  }
+.chart_wrapper.active li:nth-child(14):before { content:'45%';  }
 
 /* -- Skillset chart ending */
 .chart_wrapper li:after { position:absolute; content:''; right:-5px; top:0; width: 0; height: 0; border-top: 0px solid transparent; border-bottom: 25px solid transparent; border-left: 5px solid transparent; }
 .chart_wrapper li:nth-child(1):after{  border-left-color:#6082BB; }
 .chart_wrapper li:nth-child(2):after{  border-left-color:#E44D26; }
 .chart_wrapper li:nth-child(3):after{  border-left-color:#0868AB; }
-.chart_wrapper li:nth-child(4):after{  border-left-color:#0171BB; }
-.chart_wrapper li:nth-child(5):after{  border-left-color:firebrick; }
-.chart_wrapper li:nth-child(6):after{  border-left-color:#690081; }
-.chart_wrapper li:nth-child(7):after{  border-left-color:#1A76B9; }
-.chart_wrapper li:nth-child(8):after{  border-left-color:#00749A; }
-.chart_wrapper li:nth-child(9):after{  border-left-color:#6CF6FE; }
-.chart_wrapper li:nth-child(10):after{ border-left-color:#FCD435; }
+.chart_wrapper li:nth-child(4):after{  border-left-color:#F0DB4F; }
+.chart_wrapper li:nth-child(5):after{  border-left-color:#0171BB; }
+.chart_wrapper li:nth-child(6):after{  border-left-color:firebrick; }
+.chart_wrapper li:nth-child(7):after{  border-left-color:#CB2533; }
+.chart_wrapper li:nth-child(8):after{  border-left-color:#690081; }
+.chart_wrapper li:nth-child(9):after{  border-left-color:#1A76B9; }
+.chart_wrapper li:nth-child(10):after{  border-left-color:#00749A; }
+.chart_wrapper li:nth-child(11):after{  border-left-color:#6CF6FE; }
+.chart_wrapper li:nth-child(12):after{ border-left-color:#55976B; }
+.chart_wrapper li:nth-child(13):after{ border-left-color:#FCD435; }
+.chart_wrapper li:nth-child(14):after{ border-left-color:#F67800; }
 
 
 /* Portfolio-old
